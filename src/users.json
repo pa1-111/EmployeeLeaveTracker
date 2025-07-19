@@ -1,0 +1,108 @@
+{
+  "admin": {
+    "id": "admin001",
+    "password": "Admin@123"
+  },
+  "employees": [
+    {
+      "id": "emp001",
+      "password": "Emp@001",
+      "name": "E. Pavan",
+      "email": "pavan@example.com",
+      "gender": "Male",
+      "role": "Engineer",
+      "dateOfJoining": "2024-10-16",
+      "leaveBalance": 12
+    },
+    {
+      "id": "emp002",
+      "password": "Emp@002",
+      "name": "A. Sita",
+      "email": "sita@example.com",
+      "gender": "Female",
+      "role": "Tester",
+      "dateOfJoining": "2023-06-12",
+      "leaveBalance": 10
+    },
+    {
+      "id": "emp003",
+      "password": "Emp@003",
+      "name": "R. Kiran",
+      "email": "kiran@example.com",
+      "gender": "Male",
+      "role": "Developer",
+      "dateOfJoining": "2022-03-20",
+      "leaveBalance": 8
+    },
+    {
+      "id": "emp004",
+      "password": "Emp@004",
+      "name": "M. Lakshmi",
+      "email": "lakshmi@example.com",
+      "gender": "Female",
+      "role": "HR Executive",
+      "dateOfJoining": "2021-11-03",
+      "leaveBalance": 15
+    },
+    {
+      "id": "emp005",
+      "password": "Emp@005",
+      "name": "V. Arjun",
+      "email": "arjun@example.com",
+      "gender": "Male",
+      "role": "Team Lead",
+      "dateOfJoining": "2020-07-01",
+      "leaveBalance": 7
+    },
+    {
+      "id": "emp006",
+      "password": "Emp@006",
+      "name": "N. Meera",
+      "email": "meera@example.com",
+      "gender": "Female",
+      "role": "Business Analyst",
+      "dateOfJoining": "2022-12-15",
+      "leaveBalance": 9
+    },
+    {
+      "id": "emp007",
+      "password": "Emp@007",
+      "name": "K. Rajesh",
+      "email": "rajesh@example.com",
+      "gender": "Male",
+      "role": "QA Engineer",
+      "dateOfJoining": "2023-05-10",
+      "leaveBalance": 11
+    },
+    {
+      "id": "emp008",
+      "password": "Emp@008",
+      "name": "S. Nisha",
+      "email": "nisha@example.com",
+      "gender": "Female",
+      "role": "UI/UX Designer",
+      "dateOfJoining": "2023-09-25",
+      "leaveBalance": 13
+    },
+    {
+      "id": "emp009",
+      "password": "Emp@009",
+      "name": "J. Anil",
+      "email": "anil@example.com",
+      "gender": "Male",
+      "role": "DevOps Engineer",
+      "dateOfJoining": "2021-01-14",
+      "leaveBalance": 6
+    },
+    {
+      "id": "emp010",
+      "password": "Emp@010",
+      "name": "T. Kavya",
+      "email": "kavya@example.com",
+      "gender": "Female",
+      "role": "Project Manager",
+      "dateOfJoining": "2019-08-05",
+      "leaveBalance": 14
+    }
+  ]
+}
