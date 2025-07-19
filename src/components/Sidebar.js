@@ -6,7 +6,7 @@ import '../App.css';
 function Sidebar() {
   const navigate = useNavigate();
   const location = useLocation();
-
+ console.log("narnedra");
   return (
     <div className="sidebar">
       <ul className="sidebarList">

@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-
+       
         <Route path="/login" element={<Login/>}/>
 
         
@@ -42,18 +42,19 @@ function App() {
         <Route
            path="/admin-dashboard" 
           element={
-            <ProtectedRoute>
+            
               <SidebarAdmin />
-            </ProtectedRoute>
+             
           }
           >
 
-        <Route index element={<DashboardAdmin/>}/>
+         
+        <Route path="dashboard" element={<DashboardAdmin/>}/>
         <Route path="settings" element={<Setting/>}/>
         <Route path="employees" element={<EmployeeDetails/>}/>
         <Route path="leaves" element={<ManageLeaves/>}/>
         </Route>
-
+       
       </Routes>
     </div>
   );

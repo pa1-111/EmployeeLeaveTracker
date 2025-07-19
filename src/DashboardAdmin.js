@@ -1,6 +1,7 @@
 import React from 'react'
 
 const DashboardAdmin = () => {
+  console.log("dashboardadmin")
   return (
     <div className="dashboardAdmin"
     >

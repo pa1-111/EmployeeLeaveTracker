@@ -7,6 +7,7 @@ const EmployeeDetails = () => {
     useEffect(()=>{
         setEmployees(users.employees);
     },[]);
+    console.log("Emplyee detials page")
   return (
     <div className="employee-table-container">
       <h2>Employee Details</h2>
