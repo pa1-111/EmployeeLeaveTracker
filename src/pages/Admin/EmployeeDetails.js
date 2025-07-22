@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import users from './users.json'
+import users from '../../../users.json'
 
 const EmployeeDetails = () => {
     const[employees,setEmployees] = useState([]);

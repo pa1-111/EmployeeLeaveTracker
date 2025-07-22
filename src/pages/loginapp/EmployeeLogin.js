@@ -3,7 +3,8 @@ import Sidebar from './components/Sidebar';
 import { Outlet } from 'react-router-dom';
 import Header from './Header';
 
-const AdminLogin = () => {
+const EmployeeLogin = () => {
+  console.log("employee login")
   return (
     <div>
       <Header/>
@@ -18,4 +19,4 @@ const AdminLogin = () => {
   );
 };
 
-export default AdminLogin;
+export default EmployeeLogin;

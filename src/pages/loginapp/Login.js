@@ -25,6 +25,7 @@ const Login = () =>{
         );
 
         if(matchedEmployee){
+          login({ id: matchedEmployee.id, role: "employee" });
           navigate("employee-dashboard",{state:{employee : matchedEmployee}});
         }
         else{

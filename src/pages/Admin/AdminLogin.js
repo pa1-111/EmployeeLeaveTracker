@@ -1,9 +1,9 @@
 import React from 'react';
 import Sidebar from './components/Sidebar';
 import { Outlet } from 'react-router-dom';
-import Header from './Header';
+import Header from '../components/Header';
 
-const EmployeeLogin = () => {
+const AdminLogin = () => {
   return (
     <div>
       <Header/>
@@ -18,4 +18,4 @@ const EmployeeLogin = () => {
   );
 };
 
-export default EmployeeLogin;
+export default AdminLogin;

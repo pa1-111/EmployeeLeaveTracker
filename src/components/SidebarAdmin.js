@@ -1,8 +1,9 @@
 import React from 'react';
-import { SidebarDataAdmin } from './SidebarDataAdmin';
+import { SidebarDataAdmin } from '../pages/Admin/SidebarDataAdmin';
 import { useNavigate, useLocation } from 'react-router-dom';
 import '../App.css';
-import Header from '../Header';
+import Header from './Header';
+import {Outlet} from "react-router-dom";
 
 function SidebarAdmin() {
   const navigate = useNavigate();
@@ -24,6 +25,9 @@ function SidebarAdmin() {
           </li>
         ))}
       </ul>
+      <div>
+        <Outlet/>
+      </div>
     </div>
   );
 }
