@@ -1,9 +1,9 @@
-// import './App.css';
+ import './styles/App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {   Routes, Route } from 'react-router-dom';
 import Leave from './pages/employee/Leave';
 import ProfilePage from './pages/employee/ProfilePage';
-import Setting from './pages/employee/Setting';
+import Setting from './components/Setting';
 import DashboardPage from './pages/employee/DashboardPage';
 import AddLeave from './pages/employee/AddLeave';
 import ProtectedRoute from './components/ProtectedRoute';
@@ -28,8 +28,7 @@ function App() {
             <ProtectedRoute>
               <EmployeeLogin />
             </ProtectedRoute>
-                
-             
+                         
             }
           >
             <Route path="" element={<DashboardPage />} />

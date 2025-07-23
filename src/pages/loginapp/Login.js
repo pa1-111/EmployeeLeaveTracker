@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import './Login.css';
-import {useAuth} from "./AuthContext";
+import '../../styles/Login.css';
+import {useAuth} from "../../context/AuthContext";
 import {useNavigate} from "react-router-dom"
-import data from "./users.json"
+import data from "../../users.json"
 
 const Login = () =>{
     const {login} =useAuth();
@@ -26,7 +26,7 @@ const Login = () =>{
 
         if(matchedEmployee){
           login({ id: matchedEmployee.id, role: "employee" });
-          navigate("employee-dashboard",{state:{employee : matchedEmployee}});
+          navigate("/employee-dashboard",{state:{employee : matchedEmployee}});
         }
         else{
           alert("Invalid credentials")

@@ -12,7 +12,10 @@
       "gender": "Male",
       "role": "Engineer",
       "dateOfJoining": "2024-10-16",
-      "leaveBalance": 12
+      "leaveBalance": 12,
+      "casualLeave": 5,
+      "sickLeave": 7,
+      "workFromHome": 22
     },
     {
       "id": "emp002",
@@ -22,7 +25,10 @@
       "gender": "Female",
       "role": "Tester",
       "dateOfJoining": "2023-06-12",
-      "leaveBalance": 10
+      "leaveBalance": 10,
+      "casualLeave": 4,
+      "sickLeave": 6,
+      "workFromHome": 23
     },
     {
       "id": "emp003",
@@ -32,7 +38,10 @@
       "gender": "Male",
       "role": "Developer",
       "dateOfJoining": "2022-03-20",
-      "leaveBalance": 8
+      "leaveBalance": 8,
+      "casualLeave": 3,
+      "sickLeave": 5,
+      "workFromHome": 24
     },
     {
       "id": "emp004",
@@ -42,7 +51,10 @@
       "gender": "Female",
       "role": "HR Executive",
       "dateOfJoining": "2021-11-03",
-      "leaveBalance": 15
+      "leaveBalance": 15,
+      "casualLeave": 6,
+      "sickLeave": 9,
+      "workFromHome": 25
     },
     {
       "id": "emp005",
@@ -52,7 +64,10 @@
       "gender": "Male",
       "role": "Team Lead",
       "dateOfJoining": "2020-07-01",
-      "leaveBalance": 7
+      "leaveBalance": 7,
+      "casualLeave": 2,
+      "sickLeave": 5,
+      "workFromHome": 21
     },
     {
       "id": "emp006",
@@ -62,7 +77,10 @@
       "gender": "Female",
       "role": "Business Analyst",
       "dateOfJoining": "2022-12-15",
-      "leaveBalance": 9
+      "leaveBalance": 9,
+      "casualLeave": 4,
+      "sickLeave": 5,
+      "workFromHome": 26
     },
     {
       "id": "emp007",
@@ -72,7 +90,10 @@
       "gender": "Male",
       "role": "QA Engineer",
       "dateOfJoining": "2023-05-10",
-      "leaveBalance": 11
+      "leaveBalance": 11,
+      "casualLeave": 5,
+      "sickLeave": 6,
+      "workFromHome": 27
     },
     {
       "id": "emp008",
@@ -82,7 +103,10 @@
       "gender": "Female",
       "role": "UI/UX Designer",
       "dateOfJoining": "2023-09-25",
-      "leaveBalance": 13
+      "leaveBalance": 13,
+      "casualLeave": 7,
+      "sickLeave": 6,
+      "workFromHome": 29
     },
     {
       "id": "emp009",
@@ -92,7 +116,10 @@
       "gender": "Male",
       "role": "DevOps Engineer",
       "dateOfJoining": "2021-01-14",
-      "leaveBalance": 6
+      "leaveBalance": 6,
+      "casualLeave": 2,
+      "sickLeave": 4,
+      "workFromHome": 22
     },
     {
       "id": "emp010",
@@ -102,7 +129,10 @@
       "gender": "Female",
       "role": "Project Manager",
       "dateOfJoining": "2019-08-05",
-      "leaveBalance": 14
+      "leaveBalance": 14,
+      "casualLeave": 6,
+      "sickLeave": 8,
+      "workFromHome": 28
     }
   ]
 }

@@ -1,0 +1,31 @@
+
+.dashboardAdmin {
+ display: flex;
+  min-height: 100vh;
+  text-align: right;
+}
+.dashboardAdmin .container1{
+  width:100px;
+  margin:300px auto;
+  padding :30px;
+  border:1px solid#ccc;
+  border-radius:5px;
+  text-align:center;
+}
+.dashboardAdmin .container-wrap{
+  display:flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px
+
+}
+.dashboardAdmin .container{
+  width: 40%;
+  min-width: 100px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+
+}

@@ -1,0 +1,13 @@
+
+.manage-leaves th, .manage-leaves td{
+  
+  border-collapse: collapse;
+  justify-content: space-between;
+  padding: 12px 20px;
+  text-align: left;
+  flex-wrap: wrap;
+
+}
+.manage-leaves .table-design{
+  border-collapse: ;
+}

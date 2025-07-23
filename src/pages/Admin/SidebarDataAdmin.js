@@ -1,5 +1,4 @@
-import React from 'react'
-import '../App.js';
+import React from 'react';
 
 export const SidebarDataAdmin =[
     {

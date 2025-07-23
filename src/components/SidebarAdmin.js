@@ -1,7 +1,7 @@
 import React from 'react';
 import { SidebarDataAdmin } from '../pages/Admin/SidebarDataAdmin';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../App.css';
+import '../App';
 import Header from './Header';
 import {Outlet} from "react-router-dom";
 

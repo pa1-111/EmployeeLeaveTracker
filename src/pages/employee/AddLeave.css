@@ -1,0 +1,30 @@
+.addLeave-container{
+  width:1000px;
+  margin:100px auto;
+  padding :30px;
+  border:1px solid#ccc;
+  border-radius:5px;
+  text-align:left;
+  
+}
+.addLeave-container h2{
+    margin-bottom:20px;
+}
+.addLeave-container input{
+    width:100%;
+    padding:10px;
+    margin: 10px 0;
+}
+.addLeave-container button{
+    width: 100%;
+    padding:10px;
+    color:#f5f5f5;
+    background-color:green;
+    margin-top:20px;
+}
+.addLeave-container label{
+    display:block;
+    text-align: left;
+    margin-top:15px;
+    font-weight:bold;
+}

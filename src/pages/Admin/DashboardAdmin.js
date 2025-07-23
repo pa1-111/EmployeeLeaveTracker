@@ -1,4 +1,5 @@
 import React from 'react'
+import './DashboardAdmin.css';
 
 const DashboardAdmin = () => {
   console.log("dashboardadmin")

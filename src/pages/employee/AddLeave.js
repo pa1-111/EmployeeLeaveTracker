@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './AddLeave.css';
 const AddLeave = () => {
   return (
     <div className="addLeave-container">

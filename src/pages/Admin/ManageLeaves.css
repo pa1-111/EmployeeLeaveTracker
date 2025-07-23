@@ -1,0 +1,19 @@
+
+.manage-leaves-wrapper {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+ /* horizontal center */
+  width:100%;  /* vertical center */
+
+}
+.manage-leaves{
+  width: 100px;
+  margin: 100px auto;
+  border-collapse:collapse ;
+  padding: 40px;
+  font-family: Arial, sans-serif;
+  background: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

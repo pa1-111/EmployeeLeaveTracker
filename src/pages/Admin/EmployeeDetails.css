@@ -1,0 +1,22 @@
+
+.employee-table-container {
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.employee-table-container .employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table-container .employee-table th,
+.employee-table-container .employee-table td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: right;
+}
+
+.employee-table-container .employee-table th {
+  background-color: #f4f4f4;
+}

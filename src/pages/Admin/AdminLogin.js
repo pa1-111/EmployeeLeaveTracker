@@ -7,9 +7,9 @@ const AdminLogin = () => {
   return (
     <div>
       <Header/>
-      <div style={{ display: 'flex' }}>
+      <div >
       <Sidebar />
-      <div style={{ flex: 1, padding: '20px' }}>
+      <div >
         <Outlet />  {/* This is where your pages will render */}
       </div>
     </div>

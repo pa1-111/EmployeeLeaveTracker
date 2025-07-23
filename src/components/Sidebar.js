@@ -1,7 +1,8 @@
 import React from 'react';
-import { SidebarData } from '../pages/Login/employee/SidebarData';
+import '../styles/App.css';
+import { SidebarData } from '../pages/employee/SidebarData';
 import { useNavigate, useLocation } from 'react-router-dom';
-import '../App.css';
+import '../App';
 
 function Sidebar() {
   const navigate = useNavigate();
@@ -13,7 +14,8 @@ function Sidebar() {
         {SidebarData.map((val, key) => (
           <li
             key={key}
-            className={`row ${location.pathname.endsWith(val.link) ? 'active' : ''}`}
+            className={`row ${location.pathname === val.link ? 'active' : ''}`}
+
             onClick={() => navigate(val.link)}
           >
             <div className="icon">{val.icon}</div>
