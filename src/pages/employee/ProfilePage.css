@@ -1,0 +1,35 @@
+
+.employee-details{
+  width:400px;
+  height: 300px;
+  padding:30px;
+  margin :10px auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#333;
+}
+.employee-details .field{
+  display:flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom :1px solid #eee;
+}
+.employee-details .label{
+  font-weight:40;
+  margin-right: 5px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.employee-details h2{
+  text-align: center;
+  color:#1E90FF;
+  margin-bottom: 30px;
+  font-size :20px;
+}
+.employee-details .value{
+  color:#1F1F1F;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-right: 100px;
+  text-align: right;
+  flex:1;
+}

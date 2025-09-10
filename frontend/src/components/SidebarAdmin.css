@@ -1,0 +1,17 @@
+.admin-container {
+  display: flex;          /* Puts sidebar + content side by side */
+  height: 100vh;          /* Full height layout */
+}
+
+.sidebar {
+  width: 250px;           /* Fixed width for sidebar */
+  background-color: #222; /* Example styling */
+  color: white;
+  padding: 1rem;
+}
+
+.admin-content {
+  flex: 1;                /* Take up remaining space */
+  padding: 1rem;
+  overflow-y: auto;       /* Scroll if content too big */
+}

@@ -1,0 +1,42 @@
+.header{
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 90%;
+  font-size: 1rem;
+  height: 80px;
+  text-align: center;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  
+}
+.app-title {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin:0;
+}
+
+.logout-button {
+  position: absolute;     /* ✅ Add this */
+  right: 1rem;            /* ✅ Add this */
+  top: 50%;               /* ✅ Optional, centers it vertically */
+  transform: translateY(-50%); /* ✅ Optional for perfect vertical centering */
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}

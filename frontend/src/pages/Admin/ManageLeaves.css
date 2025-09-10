@@ -1,0 +1,88 @@
+.manage-leaves-wrapper {
+  width: 90%;
+  margin: 30px auto;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+/* Container around table */
+.table-container {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow-x: auto;
+}
+
+/* Table Styling */
+.leaves-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px; /* smaller font */
+}
+
+.leaves-table th,
+.leaves-table td {
+  padding: 8px 12px; /* smaller padding */
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.leaves-table th {
+  background-color: #4f46e5;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leaves-table tr:hover {
+  background-color: #e0f7fa;
+}
+
+/* Buttons Styling */
+button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:first-child {
+  background-color: #28a745;
+  color: white;
+}
+
+button:last-child {
+  background-color: #dc3545;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .leaves-table th,
+  .leaves-table td {
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+
+  button {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+}
