@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/EmployeeLeaveTracker-frontend/static/css/main.391df08e.css",
+    "main.js": "/EmployeeLeaveTracker-frontend/static/js/main.cdbae3af.js",
+    "static/js/453.b79f1939.chunk.js": "/EmployeeLeaveTracker-frontend/static/js/453.b79f1939.chunk.js",
+    "index.html": "/EmployeeLeaveTracker-frontend/index.html",
+    "main.391df08e.css.map": "/EmployeeLeaveTracker-frontend/static/css/main.391df08e.css.map",
+    "main.cdbae3af.js.map": "/EmployeeLeaveTracker-frontend/static/js/main.cdbae3af.js.map",
+    "453.b79f1939.chunk.js.map": "/EmployeeLeaveTracker-frontend/static/js/453.b79f1939.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.391df08e.css",
+    "static/js/main.cdbae3af.js"
+  ]
+}
