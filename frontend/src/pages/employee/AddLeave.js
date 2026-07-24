@@ -32,12 +32,12 @@ const AddLeave = ({ onLeaveAdded }) => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/leaves/apply",
+        "https://employeeleave-backend-qeh6.onrender.com/api/leaves/apply",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(requestBody),
-        }
+        },
       );
 
       const data = await response.json();
@@ -100,7 +100,7 @@ const AddLeave = ({ onLeaveAdded }) => {
       {/* Toast Container: required for showing toasts */}
       <ToastContainer
         position="top-right"
-        autoClose={3000}   // hide automatically after 3 seconds
+        autoClose={3000} // hide automatically after 3 seconds
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

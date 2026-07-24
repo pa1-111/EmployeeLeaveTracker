@@ -52,8 +52,8 @@ const Setting = () => {
     try {
       const endpoint =
         user.role?.toUpperCase() === "ADMIN"
-          ? `http://localhost:8080/api/admin/${user.id}/change-password`
-          : `http://localhost:8080/api/employees/${user.id}/change-password`;
+          ? `https://employeeleave-backend-qeh6.onrender.com/api/admin/${user.id}/change-password`
+          : `https://employeeleave-backend-qeh6.onrender.com/api/employees/${user.id}/change-password`;
 
       const payload = {
         oldPassword: currentPassword.trim(),

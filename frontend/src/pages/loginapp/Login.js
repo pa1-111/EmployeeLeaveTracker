@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './Login.css';
+import React, { useState } from "react";
+import "./Login.css";
 import { useAuth } from "../../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -7,17 +7,20 @@ import axios from "axios";
 const Login = () => {
   const { login } = useAuth();
   const navigate = useNavigate();
-  const [userID, setUserID] = useState('');
-  const [password, setPassword] = useState('');
+  const [userID, setUserID] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleLogin = async (e) => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8080/api/auth/login", {
-        id: userID,
-        password: password
-      });
+      const res = await axios.post(
+        "https://employeeleave-backend-qeh6.onrender.com/api/auth/login",
+        {
+          id: userID,
+          password: password,
+        },
+      );
 
       if (res.data === "ADMIN") {
         login({ id: userID, role: "admin" });

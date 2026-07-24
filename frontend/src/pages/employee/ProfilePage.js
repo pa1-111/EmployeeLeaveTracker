@@ -13,7 +13,9 @@ const ProfilePage = () => {
     }
 
     axios
-      .get(`http://localhost:8080/api/employees/${employeeId}`)
+      .get(
+        `https://employeeleave-backend-qeh6.onrender.com/api/employees/${employeeId}`,
+      )
       .then((res) => setEmployee(res.data))
       .catch((err) => console.error("Error fetching profile:", err));
   }, []);

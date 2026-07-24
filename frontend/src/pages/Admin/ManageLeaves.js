@@ -12,9 +12,9 @@ const ManageLeaves = () => {
 
   const fetchLeaves = useCallback(async () => {
     try {
-      let url = "http://localhost:8080/api/leaves";
+      let url = "https://employeeleave-backend-qeh6.onrender.com/api/leaves";
       if (currentStatus !== "all") {
-        url = `http://localhost:8080/api/leaves/status/${currentStatus}`;
+        url = `https://employeeleave-backend-qeh6.onrender.com/api/leaves/status/${currentStatus}`;
       }
       const response = await axios.get(url);
       setLeaves(response.data.data || response.data);
@@ -31,7 +31,9 @@ const ManageLeaves = () => {
 
   const handleApprove = async (leaveId) => {
     try {
-      await axios.put(`http://localhost:8080/api/leaves/approve/${leaveId}`);
+      await axios.put(
+        `https://employeeleave-backend-qeh6.onrender.com/api/leaves/approve/${leaveId}`,
+      );
       fetchLeaves();
     } catch (error) {
       console.error("Error approving leave:", error);
@@ -40,7 +42,9 @@ const ManageLeaves = () => {
 
   const handleReject = async (leaveId) => {
     try {
-      await axios.put(`http://localhost:8080/api/leaves/reject/${leaveId}`);
+      await axios.put(
+        `https://employeeleave-backend-qeh6.onrender.com/api/leaves/reject/${leaveId}`,
+      );
       fetchLeaves();
     } catch (error) {
       console.error("Error rejecting leave:", error);

@@ -16,7 +16,9 @@ const Leave = () => {
 
     // Fetch leave history of employee
     axios
-      .get(`http://localhost:8080/api/leaves/history/${employeeId}`)
+      .get(
+        `https://employeeleave-backend-qeh6.onrender.com/api/leaves/history/${employeeId}`,
+      )
       .then((res) => {
         console.log("Leaves from backend:", res.data); // 👈 check keys here
         if (res.data.status === "Success") {

@@ -11,7 +11,9 @@ const DashboardPage = () => {
   useEffect(() => {
     if (user && user.role === "employee") {
       axios
-        .get(`http://localhost:8080/api/employees/${user.id}`)
+        .get(
+          `https://employeeleave-backend-qeh6.onrender.com/api/employees/${user.id}`,
+        )
         .then((res) => {
           setEmployee(res.data);
           setLoading(false);

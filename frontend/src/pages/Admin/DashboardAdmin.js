@@ -25,11 +25,21 @@ const DashboardAdmin = () => {
       try {
         const [empRes, appliedRes, approvedRes, pendingRes, rejectedRes] =
           await Promise.all([
-            fetch("http://localhost:8080/api/employees/count"),
-            fetch("http://localhost:8080/api/leaves/count/applied"),
-            fetch("http://localhost:8080/api/leaves/count/approved"),
-            fetch("http://localhost:8080/api/leaves/count/pending"),
-            fetch("http://localhost:8080/api/leaves/count/rejected"),
+            fetch(
+              "https://employeeleave-backend-qeh6.onrender.com/api/employees/count",
+            ),
+            fetch(
+              "https://employeeleave-backend-qeh6.onrender.com/api/leaves/count/applied",
+            ),
+            fetch(
+              "https://employeeleave-backend-qeh6.onrender.com/api/leaves/count/approved",
+            ),
+            fetch(
+              "https://employeeleave-backend-qeh6.onrender.com/api/leaves/count/pending",
+            ),
+            fetch(
+              "https://employeeleave-backend-qeh6.onrender.com/api/leaves/count/rejected",
+            ),
           ]);
 
         setCounts({

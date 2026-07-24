@@ -7,7 +7,7 @@ const EmployeeDetails = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/employees/all")
+      .get("https://employeeleave-backend-qeh6.onrender.com/api/employees/all")
       .then((res) => {
         console.log("API Response:", res.data); // 👈 Debug log
         // If your backend returns { data: [...] }
