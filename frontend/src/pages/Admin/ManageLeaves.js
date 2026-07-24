@@ -1,18 +1,18 @@
-import React, { useEffect, useState, useCallback } from 'react';
-import './ManageLeaves.css';
-import axios from 'axios';
-import { useParams } from 'react-router-dom';
+import React, { useEffect, useState, useCallback } from "react";
+import "./ManageLeaves.css";
+import axios from "axios";
+import { useParams } from "react-router-dom";
 
 const ManageLeaves = () => {
-  const { status } = useParams(); 
-  const currentStatus = status || 'all'; // undefined treated as "all"
+  const { status } = useParams();
+  const currentStatus = status || "all"; // undefined treated as "all"
 
   const [leaves, setLeaves] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const fetchLeaves = useCallback(async () => {
     try {
-      let url = 'http://localhost:8080/api/leaves';
+      let url = "http://localhost:8080/api/leaves";
       if (currentStatus !== "all") {
         url = `http://localhost:8080/api/leaves/status/${currentStatus}`;
       }
@@ -20,7 +20,7 @@ const ManageLeaves = () => {
       setLeaves(response.data.data || response.data);
       setLoading(false);
     } catch (error) {
-      console.error('Error fetching leaves:', error);
+      console.error("Error fetching leaves:", error);
       setLoading(false);
     }
   }, [currentStatus]);
@@ -34,7 +34,7 @@ const ManageLeaves = () => {
       await axios.put(`http://localhost:8080/api/leaves/approve/${leaveId}`);
       fetchLeaves();
     } catch (error) {
-      console.error('Error approving leave:', error);
+      console.error("Error approving leave:", error);
     }
   };
 
@@ -43,19 +43,21 @@ const ManageLeaves = () => {
       await axios.put(`http://localhost:8080/api/leaves/reject/${leaveId}`);
       fetchLeaves();
     } catch (error) {
-      console.error('Error rejecting leave:', error);
+      console.error("Error rejecting leave:", error);
     }
   };
 
   if (loading) return <p>Loading leave requests...</p>;
 
   // Always show Actions column if coming from Admin dashboard (currentStatus = all)
-  const showActionsColumn = currentStatus === 'pending' || currentStatus === 'all';
+  const showActionsColumn =
+    currentStatus === "pending" || currentStatus === "all";
 
   return (
     <div className="manage-leaves-wrapper">
       <h2>
-        Manage Leaves {currentStatus !== "all" ? `- ${currentStatus.toUpperCase()}` : ''}
+        Manage Leaves{" "}
+        {currentStatus !== "all" ? `- ${currentStatus.toUpperCase()}` : ""}
       </h2>
 
       {leaves.length === 0 ? (
@@ -87,10 +89,14 @@ const ManageLeaves = () => {
                   <td>{new Date(leave.endDate).toLocaleDateString()}</td>
                   <td>{leave.reason}</td>
                   <td>{leave.status}</td>
-                  {showActionsColumn && leave.status === 'PENDING' ? (
+                  {showActionsColumn && leave.status === "PENDING" ? (
                     <td>
-                      <button onClick={() => handleApprove(leave.id)}>Approve</button>
-                      <button onClick={() => handleReject(leave.id)}>Reject</button>
+                      <button onClick={() => handleApprove(leave.id)}>
+                        Approve
+                      </button>
+                      <button onClick={() => handleReject(leave.id)}>
+                        Reject
+                      </button>
                     </td>
                   ) : showActionsColumn ? (
                     <td></td>

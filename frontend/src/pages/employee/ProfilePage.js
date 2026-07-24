@@ -13,7 +13,7 @@ const ProfilePage = () => {
     }
 
     axios
-      .get(`http://localhost:8080/employee/${employeeId}`)
+      .get(`http://localhost:8080/api/employees/${employeeId}`)
       .then((res) => setEmployee(res.data))
       .catch((err) => console.error("Error fetching profile:", err));
   }, []);

@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { BsPeopleFill, BsFileEarmarkRuledFill, BsCheck2Circle, BsHourglassSplit, BsXSquare } from "react-icons/bs";
+import React, { useEffect, useState } from "react";
+import {
+  BsPeopleFill,
+  BsFileEarmarkRuledFill,
+  BsCheck2Circle,
+  BsHourglassSplit,
+  BsXSquare,
+} from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
-import './DashboardAdmin.css';
+import "./DashboardAdmin.css";
 
 const DashboardAdmin = () => {
   const [counts, setCounts] = useState({
@@ -17,13 +23,14 @@ const DashboardAdmin = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const [empRes, appliedRes, approvedRes, pendingRes, rejectedRes] = await Promise.all([
-          fetch("http://localhost:8080/api/employees/count"),
-          fetch("http://localhost:8080/api/leaves/count/applied"),
-          fetch("http://localhost:8080/api/leaves/count/approved"),
-          fetch("http://localhost:8080/api/leaves/count/pending"),
-          fetch("http://localhost:8080/api/leaves/count/rejected"),
-        ]);
+        const [empRes, appliedRes, approvedRes, pendingRes, rejectedRes] =
+          await Promise.all([
+            fetch("http://localhost:8080/api/employees/count"),
+            fetch("http://localhost:8080/api/leaves/count/applied"),
+            fetch("http://localhost:8080/api/leaves/count/approved"),
+            fetch("http://localhost:8080/api/leaves/count/pending"),
+            fetch("http://localhost:8080/api/leaves/count/rejected"),
+          ]);
 
         setCounts({
           employees: (await empRes.json()).data,
@@ -68,36 +75,51 @@ const DashboardAdmin = () => {
       <h2>Dashboard Overview</h2>
 
       {/* Total Employees */}
-      <div className="container1" onClick={() => handleCardClick("employees")}>
-        <BsPeopleFill size={40} />
-        <p>{counts.employees}</p>
+      <div
+        className="container1 employee"
+        onClick={() => handleCardClick("employees")}
+      >
+        <BsPeopleFill className="icon" />
+        <p className="count">{counts.employees}</p>
         <span>All Employees</span>
       </div>
 
       <h2 className="leave-title">Leave Details</h2>
 
       <div className="container-wrap">
-        <div className="container applied" onClick={() => handleCardClick("applied")}>
-          <BsFileEarmarkRuledFill size={40} />
-          <p>{counts.applied}</p>
+        <div
+          className="container applied"
+          onClick={() => handleCardClick("applied")}
+        >
+          <BsFileEarmarkRuledFill className="icon" />
+          <p className="count">{counts.applied}</p>
           <span>Leave Applied</span>
         </div>
 
-        <div className="container approved" onClick={() => handleCardClick("approved")}>
-          <BsCheck2Circle size={40} />
-          <p>{counts.approved}</p>
+        <div
+          className="container approved"
+          onClick={() => handleCardClick("approved")}
+        >
+          <BsCheck2Circle className="icon" />
+          <p className="count">{counts.approved}</p>
           <span>Leave Approved</span>
         </div>
 
-        <div className="container pending" onClick={() => handleCardClick("pending")}>
-          <BsHourglassSplit size={40} />
-          <p>{counts.pending}</p>
+        <div
+          className="container pending"
+          onClick={() => handleCardClick("pending")}
+        >
+          <BsHourglassSplit className="icon" />
+          <p className="count">{counts.pending}</p>
           <span>Leave Pending</span>
         </div>
 
-        <div className="container rejected" onClick={() => handleCardClick("rejected")}>
-          <BsXSquare size={40} />
-          <p>{counts.rejected}</p>
+        <div
+          className="container rejected"
+          onClick={() => handleCardClick("rejected")}
+        >
+          <BsXSquare className="icon" />
+          <p className="count">{counts.rejected}</p>
           <span>Leave Rejected</span>
         </div>
       </div>

@@ -1,16 +1,18 @@
-.header{
-  background-color: orange;
+.header {
+  background: linear-gradient(90deg, #ff8c00, #ffb347);
+  height: 70px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
   padding: 0.5rem 1rem;
   color: white;
   display: flex;
   align-items: center;
   position: relative;
-  width: 90%;
+  /* width: 90%; */
   font-size: 1rem;
   height: 80px;
   text-align: center;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
-  
+  font-family: "Poppins", "Segoe UI", sans-serif;
 }
 .app-title {
   font-size: 1.5rem;
@@ -19,23 +21,25 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin:0;
+  margin: 0;
 }
 
 .logout-button {
-  position: absolute;     /* ✅ Add this */
-  right: 1rem;            /* ✅ Add this */
-  top: 50%;               /* ✅ Optional, centers it vertically */
+  position: absolute; /* ✅ Add this */
+  right: 1rem; /* ✅ Add this */
+  top: 50%; /* ✅ Optional, centers it vertically */
   transform: translateY(-50%); /* ✅ Optional for perfect vertical centering */
   background-color: #f44336;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  /* font-size: ; */
+  padding: 1rem 2rem;
   cursor: pointer;
   border-radius: 4px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
 }
-
 
 .logout-button:hover {
   background-color: #d32f2f;

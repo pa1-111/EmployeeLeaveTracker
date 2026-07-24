@@ -1,36 +1,77 @@
-.addLeave-container{
-  width:600px;
-  height:500px;
-  margin:10px auto;
-  padding :30px;
-  border:1px solid#ccc;
-  border-radius:5px;
-  text-align:left;
+.addLeave-container {
+  width: 600px;
+  min-height: 500px;
+  margin: 20px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fafafa;
   font-family: Arial, sans-serif;
-  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
-.addLeave-container h2{
+.addLeave-container h2 {
   text-align: center;
+  margin-bottom: 25px;
+  color: #333;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.addLeave-container label{
+
+.addLeave-container label {
   display: block;
   margin-top: 15px;
   font-weight: bold;
-  color:#444;
-
-
+  color: #444;
 }
-.addLeave-container select{
-  width:100%;
-}
-.addLeave-container input{
-  width:100%;
-  padding:10px;
-  margin-top: 10px;
-  border:1px solid #ccc;
+
+.addLeave-container select,
+.addLeave-container input,
+.addLeave-container textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
   border-radius: 6px;
-  font: size 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
 
+/* Highlight input/select on focus */
+.addLeave-container input:focus,
+.addLeave-container select:focus,
+.addLeave-container textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit button */
+.addLeave-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.addLeave-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message text */
+.error-text {
+  color: red;
+  font-size: 13px;
+  margin-top: 3px;
+  display: block;
+}
+
+/* Optional: add spacing between form groups */
+.addLeave-container .form-group {
+  margin-bottom: 20px;
 }

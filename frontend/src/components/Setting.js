@@ -51,9 +51,9 @@ const Setting = () => {
 
     try {
       const endpoint =
-         user.role?.toUpperCase() === "ADMIN"
-          ? `http://localhost:8080/admin/${user.id}/change-password`
-          : `http://localhost:8080/employee/${user.id}/change-password`;
+        user.role?.toUpperCase() === "ADMIN"
+          ? `http://localhost:8080/api/admin/${user.id}/change-password`
+          : `http://localhost:8080/api/employees/${user.id}/change-password`;
 
       const payload = {
         oldPassword: currentPassword.trim(),
@@ -73,7 +73,9 @@ const Setting = () => {
       setConfirmPassword("");
     } catch (err) {
       console.error(err);
-      toast.error(err.response?.data || "❌ Error updating password. Try again.");
+      toast.error(
+        err.response?.data || "❌ Error updating password. Try again.",
+      );
     } finally {
       setLoading(false);
     }

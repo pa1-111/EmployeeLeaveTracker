@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import './EmployeeDetails.css';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "./EmployeeDetails.css";
 
 const EmployeeDetails = () => {
   const [employees, setEmployees] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/employee/all")
+    axios
+      .get("http://localhost:8080/api/employees/all")
       .then((res) => {
-        console.log("API Response:", res.data);  // 👈 Debug log
+        console.log("API Response:", res.data); // 👈 Debug log
         // If your backend returns { data: [...] }
         if (res.data.data) {
           setEmployees(res.data);
@@ -41,7 +42,11 @@ const EmployeeDetails = () => {
               <td>{emp.name}</td>
               <td>{emp.role}</td>
               <td>{emp.email}</td>
-              <td>{emp.dateOfJoining ? new Date(emp.dateOfJoining).toLocaleDateString() : "N/A"}</td>
+              <td>
+                {emp.dateOfJoining
+                  ? new Date(emp.dateOfJoining).toLocaleDateString()
+                  : "N/A"}
+              </td>
             </tr>
           ))}
         </tbody>

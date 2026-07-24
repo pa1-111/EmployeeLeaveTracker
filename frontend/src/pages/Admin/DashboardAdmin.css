@@ -1,22 +1,21 @@
 .dashboardAdmin {
-  background-color: black;
-  color: white;
-  padding: 24px;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-  width: 600px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+  width: 72%;
   margin: 30px auto;
-  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-family: "Segoe UI", Tahoma, sans-serif;
   text-align: center;
 }
 
 /* Title Styling */
 .dashboardAdmin h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 1.8rem;
+  /* text-align: center; */
+  margin-bottom: px;
+  font-size: 42px;
   font-weight: bold;
-  color: #00BFFF;
+  color: #223b63;
 }
 
 /* Leave Details Heading */
@@ -26,7 +25,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #00BFFF;
+  color: #223b63;
 }
 
 /* Grid Layout */
@@ -35,63 +34,88 @@
   grid-template-columns: repeat(2, 1fr); /* 2 columns */
   gap: 15px; /* reduced gap for compact look */
   align-items: stretch; /* makes all cards equal height */
+  /* border-radius: 10px; */
 }
 
 /* Individual Leave Card */
 .dashboardAdmin .container {
-  background-color: #222;
-  padding: 20px 15px; /* reduced padding */
-  border: 1px solid #444;
-  border-radius: 12px;
-  transition: transform 0.2s ease, background-color 0.3s;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; /* smaller gap inside card */
-  min-height: 100px; /* leave cards remain rectangular */
+  background: white;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
 }
 
 .dashboardAdmin .container:hover {
-  transform: scale(1.05);
-  background-color: #333;
-  cursor: pointer;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  /* border-color: #f59e0b; */
 }
 
 /* Total Employees Card as Square/Small Rectangle */
 
-
 .dashboardAdmin .container1:hover {
   transform: scale(1.05);
-  background-color: #333;
+  background-color: whitesmoke;
   cursor: pointer;
 }
 
 /* Icon styling for both card types */
-.dashboardAdmin .container svg,
+.dashboardAdmin .container svg {
+  border-radius: 50%;
+  padding: 15px;
+}
 .dashboardAdmin .container1 svg {
-  font-size: 32px; /* slightly smaller icons */
-  color: #00BFFF;
+  color: #f59e0b;
+  background: #fff3e0;
+  border-radius: 50%;
+  padding: 15px;
 }
 
 /* Labels styling for both card types */
 .dashboardAdmin .container span,
 .dashboardAdmin .container1 span {
-  font-size: 0.95rem; /* slightly smaller text */
-  color: #ccc;
+  color: #334155;
+  font-weight: 600;
 }
 
 .dashboardAdmin .container1 {
-  width: 150px;   /* wider */
-  height: 100px;  /* shorter */
-  background-color: #222;
-  padding: 10px;
-  border: 1px solid #444;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  margin: 10px auto;
+  width: 90%;
+  height: 140px;
+  background: #fff8ef;
+  border: 1px solid #fde1b8;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+.count {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 8px 0;
+}
+.icon {
+  font-size: 34px;
+}
+
+.applied svg {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.approved svg {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.pending svg {
+  background: #fff3e0;
+  color: #f59e0b;
+}
+
+.rejected svg {
+  background: #fee2e2;
+  color: #ef4444;
+}
+
+.employee svg {
+  background: #fff3e0;
+  color: #f59e0b;
 }

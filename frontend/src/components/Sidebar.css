@@ -1,41 +1,55 @@
-.sidebar{
-  height:600px;
-  width:200px;
-  background-color:#262B40;
-  margin: -20px 0px ;
+.sidebar {
+  width: 240px;
+  min-height: 100vh;
+  background: #14213d;
+  color: #fff;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.08);
+  font-family: "Poppins", "Segoe UI", sans-serif;
 }
-.sidebarList{
-  height:auto;
-  padding:0;
-  width:90%;
-}
-.row .icon{
-  flex:20%;
-  display:grid;
-  place-items: center;
-}
-.row .title{
-  flex: 60%;
-  padding-right: 80px;
-}
-.sidebarList .row{
-  width: 100%;
-  height: 60px;
-  gap:0px;
 
-  list-style-type: none;
-  margin: 0%;
+.sidebarList {
+  padding: 20px 12px;
+}
+
+.sidebarList .row {
+  width: 100%;
+  height: 56px;
   display: flex;
-  flex-direction: row;
-  color:#ccc;
-  justify-content: center;
   align-items: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  gap: 0px;
+  padding: 0 10px;
+  margin-bottom: 10px;
+  list-style: none;
+  border-radius: 12px;
+  color: #d6dde8;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
+
 .sidebarList .row:hover {
-  cursor:pointer;
-  background-color: #293846;
+  background: #23395d;
+  color: #fff;
+  transform: translateX(4px);
 }
-.sidebarList .active{
-  background-color: #1471c8;
+
+.sidebarList .row.active {
+  background: #f59e0b;
+  color: white;
+  box-shadow: 0 6px 15px rgba(245, 158, 11, 0.35);
+}
+
+.row .icon {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  font-size: 22px;
+}
+
+.row .title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 500;
 }

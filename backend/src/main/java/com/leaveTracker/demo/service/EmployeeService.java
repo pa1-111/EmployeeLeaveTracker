@@ -86,4 +86,8 @@ public class EmployeeService {
         Employee employee = optionalEmployee.get();
         return rawPassword.equals(employee.getPassword()); // plain compare
     }
+    // Get total employee count
+    public long getEmployeeCount() {
+        return employeeRepository.count();
+    }
 }

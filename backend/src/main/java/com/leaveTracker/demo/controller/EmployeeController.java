@@ -8,12 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import java.util.Map;
 
 import java.util.List;
 
 @CrossOrigin(origins = "http://localhost:3000") // ✅ Allow React frontend
 @RestController
-@RequestMapping("/employee")
+@RequestMapping("/api/employees")
 public class EmployeeController {
 
     @Autowired
@@ -93,6 +94,15 @@ public class EmployeeController {
         } else {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
         }
+    }
+    @GetMapping("/count")
+    public ResponseEntity<?> getEmployeeCount() {
+        long count = employeeService.getEmployeeCount();
+
+        return ResponseEntity.ok(Map.of(
+                "status", "Success",
+                "count", count
+        ));
     }
 
 

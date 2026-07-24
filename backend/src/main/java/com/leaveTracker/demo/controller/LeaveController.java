@@ -115,5 +115,21 @@ public class LeaveController {
             ));
         }
     }
+    @GetMapping("/count/{status}")
+    public ResponseEntity<?> getLeaveCount(@PathVariable String status) {
+        try {
+            long count = leaveService.getLeavesByStatus(status).size();
+
+            return ResponseEntity.ok(Map.of(
+                    "status", "Success",
+                    "count", count
+            ));
+        } catch (Exception e) {
+            return ResponseEntity.badRequest().body(Map.of(
+                    "status", "Error",
+                    "message", e.getMessage()
+            ));
+        }
+    }
 
 }

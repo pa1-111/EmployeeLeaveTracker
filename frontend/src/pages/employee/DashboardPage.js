@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { useAuth } from '../../context/AuthContext';
-import axios from 'axios';
-import './DashboardPage.css';
+import React, { useEffect, useState } from "react";
+import { useAuth } from "../../context/AuthContext";
+import axios from "axios";
+import "./DashboardPage.css";
 
 const DashboardPage = () => {
   const { user } = useAuth(); // logged-in user from context
@@ -11,7 +11,7 @@ const DashboardPage = () => {
   useEffect(() => {
     if (user && user.role === "employee") {
       axios
-        .get(`http://localhost:8080/employee/${user.id}`)
+        .get(`http://localhost:8080/api/employees/${user.id}`)
         .then((res) => {
           setEmployee(res.data);
           setLoading(false);

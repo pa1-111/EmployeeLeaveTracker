@@ -126,6 +126,11 @@ public class LeaveService {
     }
 
     public List<LeaveRequest> getLeavesByStatus(String status) {
+
+        if ("applied".equalsIgnoreCase(status)) {
+            status = "PENDING";
+        }
+
         LeaveStatus leaveStatus = LeaveStatus.valueOf(status.toUpperCase());
         return leaveRepository.findByStatus(leaveStatus);
     }
