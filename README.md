@@ -44,9 +44,48 @@ A full-stack Employee Leave Management System that enables employees to apply fo
 
 ### Database
 
+- Secure Login
+- Dashboard
+- Apply for Leave
+- View Leave History
+- Track Leave Status
+
+### Admin
+
+- Secure Login
+- Dashboard
+- View All Employees
+- Approve Leave Requests
+- Reject Leave Requests
+- Manage Employee Data
+
+## Tech Stack
+
+### Frontend
+
+- React.js
+- React Router
+- Axios
+- CSS
+
+### Backend
+
+- Java
+- Spring Boot
+- Spring Data JPA
+- REST APIs
+
+### Database
+
 - PostgreSQL
 
 ### Deployment
+
+- Frontend: Vercel
+- Backend: Render
+- Database: Render PostgreSQL
+
+<<<<<<< HEAD
 
 - Frontend: Vercel
 - Backend: Render
@@ -69,6 +108,28 @@ EmployeeLeaveTracker/
 │
 └── README.md
 ```
+
+=======
+
+## Project Structure
+
+```
+EmployeeLeaveTracker/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── src/
+│   ├── pom.xml
+│   └── Dockerfile
+│
+└── README.md
+```
+
+> > > > > > > 1c8ba842bc4ea266da2306fa9d9781ca34c3e93d
 
 ## Installation
 
@@ -125,4 +186,9 @@ Add screenshots of:
 
 GitHub: https://github.com/pa1-111/EmployeeLeaveTracker
 
+<<<<<<< HEAD
 LinkedIn: https://www.linkedin.com/in/pavan-etteboina-bb6612224/
+=======
+LinkedIn: (https://www.linkedin.com/in/pavan-etteboina-bb6612224/
+
+> > > > > > > 1c8ba842bc4ea266da2306fa9d9781ca34c3e93d
