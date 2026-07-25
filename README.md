@@ -1,79 +1,57 @@
 # Employee Leave Tracker
 
-A full-stack Employee Leave Management System that enables employees to apply for leave and administrators to manage leave requests through a secure web application.
+A full-stack **Employee Leave Management System** that enables employees to apply for leave and administrators to manage leave requests through a secure web application.
 
-## Live Demo
+---
 
-- Frontend: https://employee-leave-tracker-kappa.vercel.app
-- Backend: https://employeeleave-backend-qeh6.onrender.com
+## 🌐 Live Demo
 
-## Features
+- **Frontend:** https://employee-leave-tracker-kappa.vercel.app
+- **Backend:** https://employeeleave-backend-qeh6.onrender.com
 
-### Employee
+---
+
+## ✨ Features
+
+### Employee Module
 
 - Secure Login
-- Dashboard
+- Employee Dashboard
+- View Profile
 - Apply for Leave
 - View Leave History
 - Track Leave Status
+- Change Password
 
-### Admin
+### Admin Module
 
 - Secure Login
-- Dashboard
+- Dashboard Overview
 - View All Employees
+- View Leave Requests
 - Approve Leave Requests
 - Reject Leave Requests
-- Manage Employee Data
+- Change Password
 
-## Tech Stack
+---
+
+## 🛠️ Tech Stack
 
 ### Frontend
 
 - React.js
 - React Router
 - Axios
-- CSS
+- HTML5
+- CSS3
 
 ### Backend
 
-- Java
-- Spring Boot
+- Java 21
+- Spring Boot 3
 - Spring Data JPA
-- REST APIs
-
-### Database
-
-- Secure Login
-- Dashboard
-- Apply for Leave
-- View Leave History
-- Track Leave Status
-
-### Admin
-
-- Secure Login
-- Dashboard
-- View All Employees
-- Approve Leave Requests
-- Reject Leave Requests
-- Manage Employee Data
-
-## Tech Stack
-
-### Frontend
-
-- React.js
-- React Router
-- Axios
-- CSS
-
-### Backend
-
-- Java
-- Spring Boot
-- Spring Data JPA
-- REST APIs
+- RESTful APIs
+- Maven
 
 ### Database
 
@@ -85,15 +63,11 @@ A full-stack Employee Leave Management System that enables employees to apply fo
 - Backend: Render
 - Database: Render PostgreSQL
 
-<<<<<<< HEAD
+---
 
-- Frontend: Vercel
-- Backend: Render
-- Database: Render PostgreSQL
+## 📂 Project Structure
 
-## Project Structure
-
-```
+```text
 EmployeeLeaveTracker/
 │
 ├── frontend/
@@ -106,48 +80,30 @@ EmployeeLeaveTracker/
 │   ├── pom.xml
 │   └── Dockerfile
 │
-└── README.md
-```
-
-=======
-
-## Project Structure
-
-```
-EmployeeLeaveTracker/
-│
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
-│
-├── backend/
-│   ├── src/
-│   ├── pom.xml
-│   └── Dockerfile
+├── screenshots/
 │
 └── README.md
 ```
 
-> > > > > > > 1c8ba842bc4ea266da2306fa9d9781ca34c3e93d
+---
 
-## Installation
+## 🚀 Installation
 
-### Clone the repository
+### Clone the Repository
 
 ```bash
-git clone <YOUR_GITHUB_REPOSITORY_URL>
+git clone https://github.com/pa1-111/EmployeeLeaveTracker.git
 cd EmployeeLeaveTracker
 ```
 
-### Backend
+### Backend Setup
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-### Frontend
+### Frontend Setup
 
 ```bash
 cd frontend
@@ -155,40 +111,80 @@ npm install
 npm start
 ```
 
-## API Base URL
+---
+
+## 🔗 API Base URL
 
 ```
 https://employeeleave-backend-qeh6.onrender.com
 ```
 
-## Screenshots
+---
 
-Add screenshots of:
+## 🖥️ Screenshots
 
-- Login Page
-- Employee Dashboard
-- Admin Dashboard
-- Leave Application
-- Leave Approval
+### Login Page
 
-## Future Enhancements
+![Login Page](screenshots/login-page.png)
 
+---
+
+### Employee Dashboard
+
+![Employee Dashboard](screenshots/employee-dashboard.png)
+
+---
+
+### Admin Dashboard
+
+![Admin Dashboard](screenshots/admin-dashboard.png)
+
+---
+
+### Apply Leave
+
+![Apply Leave](screenshots/apply-leave.png)
+
+---
+
+### Leave Approval
+
+![Leave Approval](screenshots/leave-approval.png)
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                 React.js (Frontend)
+                      │
+                 Axios REST API
+                      │
+          Spring Boot REST Backend
+                      │
+                 PostgreSQL Database
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- JWT Authentication
 - Email Notifications
 - Leave Balance Calculation
-- JWT Authentication
-- Role-Based Authorization
 - Attendance Management
 - Payroll Integration
+- Role-Based Authorization
+- Dark Mode Support
+- Admin Analytics Dashboard
 
-## Author
+---
+
+## 👨‍💻 Author
 
 **Pavan**
 
-GitHub: https://github.com/pa1-111/EmployeeLeaveTracker
+- **GitHub:** https://github.com/pa1-111
+- **LinkedIn:** https://www.linkedin.com/in/pavan-etteboina-bb6612224/
 
-<<<<<<< HEAD
-LinkedIn: https://www.linkedin.com/in/pavan-etteboina-bb6612224/
-=======
-LinkedIn: (https://www.linkedin.com/in/pavan-etteboina-bb6612224/
-
-> > > > > > > 1c8ba842bc4ea266da2306fa9d9781ca34c3e93d
+---
